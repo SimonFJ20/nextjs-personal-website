@@ -47,7 +47,7 @@ const Topbar: React.FC = () => {
                         Docs
                     </Link>
                 </nav>
-                <Button href="/#Contact" variant="contained" sx={{ my: 1, mx: 1.5 }}>
+                <Button href="/#contact" variant="contained" sx={{ my: 1, mx: 1.5 }}>
                     Contact
                 </Button>
                 <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">

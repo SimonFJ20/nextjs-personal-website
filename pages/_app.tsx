@@ -14,6 +14,7 @@ import { createContext, useMemo, useState } from 'react';
 const clientSideEmotionCache = createEmotionCache();
 
 export const ColorModeContext = createContext({ toggleColorMode: () => {} });
+export const DeviceContext = createContext<{isMobile: boolean}>({isMobile: false});
 
 interface MyAppProps extends AppProps {
   emotionCache?: EmotionCache;
@@ -57,6 +58,8 @@ export default function MyApp(props: MyAppProps) {
   // const theme = useTheme();
   // const colorMode = useContext(ColorModeContext);
 
+  const isMobile = useMediaQuery('(max-width: 750px)');
+
   return (
     <CacheProvider value={emotionCache}>
       <Head>
@@ -64,9 +67,11 @@ export default function MyApp(props: MyAppProps) {
       </Head>
       <ColorModeContext.Provider value={colorMode}>
         <ThemeProvider theme={theme}>
-          {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
-          <CssBaseline enableColorScheme />
-          <Component {...pageProps} />
+          <DeviceContext.Provider value={{isMobile}}>
+            {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
+            <CssBaseline enableColorScheme />
+            <Component {...pageProps} />
+          </DeviceContext.Provider>
         </ThemeProvider>
       </ColorModeContext.Provider>
     </CacheProvider>

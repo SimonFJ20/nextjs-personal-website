@@ -1,5 +1,6 @@
 import { ThemeProvider } from "@emotion/react";
 import { Container, CssBaseline, useTheme } from "@mui/material";
+import Footer from "./Footer";
 import Topbar from "./Topbar";
 
 const Layout: React.FC = ({children}) => {
@@ -10,6 +11,7 @@ const Layout: React.FC = ({children}) => {
         <Container>
             {children}
         </Container>
+        <Footer />
     </ThemeProvider>
 }
 
