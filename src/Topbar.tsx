@@ -25,7 +25,7 @@ const Topbar: React.FC = () => {
                     <Link
                         variant="button"
                         color="text.primary"
-                        href="#"
+                        href="/"
                         sx={{ my: 1, mx: 1.5, textDecoration: 0 }}
                     >
                         Home
@@ -33,7 +33,7 @@ const Topbar: React.FC = () => {
                     <Link
                         variant="button"
                         color="text.primary"
-                        href="#"
+                        href="/blog"
                         sx={{ my: 1, mx: 1.5, textDecoration: 0 }}
                     >
                         Blog
@@ -41,13 +41,13 @@ const Topbar: React.FC = () => {
                     <Link
                         variant="button"
                         color="text.primary"
-                        href="#"
+                        href="/docs"
                         sx={{ my: 1, mx: 1.5, textDecoration: 0 }}
                     >
                         Docs
                     </Link>
                 </nav>
-                <Button href="#" variant="contained" sx={{ my: 1, mx: 1.5 }}>
+                <Button href="/#Contact" variant="contained" sx={{ my: 1, mx: 1.5 }}>
                     Contact
                 </Button>
                 <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">

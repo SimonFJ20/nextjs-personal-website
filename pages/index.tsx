@@ -1,7 +1,7 @@
-import { Container, Grid, Box, Card } from '@mui/material'
+import { Container, Grid, Box, Card } from '@mui/material';
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Link from 'next/link'
+import Head from 'next/head';
+import Link from 'next/link';
 import Image from 'next/image';
 import Layout from '../src/Layout'
 
@@ -39,7 +39,9 @@ const Home: NextPage = () => {
             </main>
           </Grid>
           <Grid item xs={4} style={{padding: '1rem', marginTop: '4rem'}}>
-            <Image src='/avatar.jpg' width={400} height={400} />
+            <Box style={{overflow: 'hidden', borderRadius: '1rem'}}>
+              <Image src='/avatar.jpg' width={400} height={400} layout={'responsive'} />
+            </Box>
           </Grid>
         </Grid>
       </Layout>
