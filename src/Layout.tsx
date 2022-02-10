@@ -4,7 +4,6 @@ import Topbar from "./Topbar";
 
 const Layout: React.FC = ({children}) => {
     const theme = useTheme();
-    console.log(theme.palette.mode);
     return <ThemeProvider theme={theme}>
         <CssBaseline />
         <Topbar />

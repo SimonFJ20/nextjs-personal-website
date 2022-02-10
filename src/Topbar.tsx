@@ -51,7 +51,7 @@ const Topbar: React.FC = () => {
                     Contact
                 </Button>
                 <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-                    {theme.palette.mode === 'light' ? <Brightness7 /> : <Brightness4 />}
+                    {theme.palette.mode === 'dark' ? <Brightness7 /> : <Brightness4 />}
                 </IconButton>
             </Toolbar>
         </Container>

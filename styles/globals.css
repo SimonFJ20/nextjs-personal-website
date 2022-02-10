@@ -11,6 +11,14 @@ a {
   text-decoration: none;
 }
 
+p a {
+  text-decoration: underline;
+}
+
+p {
+  line-height: 1.6;
+}
+
 * {
   box-sizing: border-box;
 }
