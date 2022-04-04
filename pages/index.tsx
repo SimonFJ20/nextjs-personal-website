@@ -23,7 +23,7 @@ const Home: NextPage = () => {
           lineHeight: 0,
           margin: '1rem'
         }}>
-          <Image priority={true} src='/avatar.jpg' width={400} height={400} />
+          <Image priority={true} src='/avatar.jpg' width={400} height={400} alt="me" />
         </Box>
         <main>
           <h1>😃 About me</h1>
@@ -67,13 +67,13 @@ const Home: NextPage = () => {
           <h2>📜 Projects</h2>
 
           <p>
-            <i>// TODO, something like select project of list and read more about it</i>
+            <i>{'//'} TODO, something like select project of list and read more about it</i>
           </p>
 
           <h2 id="contact">👋 Contact</h2>
 
           <p>
-            <i>// TODO, a table of contact information</i>
+            <i>{'//'} TODO, a table of contact information</i>
           </p>
         </main>
       </Layout>
