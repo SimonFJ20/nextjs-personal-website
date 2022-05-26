@@ -1,4 +1,4 @@
-import { Container, Grid, Box, Card } from '@mui/material';
+import { Container, Grid, Box, Card, List, ListItem, ListItemText } from '@mui/material';
 import type { NextPage } from 'next'
 import Head from 'next/head';
 import Image from 'next/image';
@@ -73,7 +73,30 @@ const Home: NextPage = () => {
           <h2 id="contact">👋 Contact</h2>
 
           <p>
-            <i>{'//'} TODO, a table of contact information</i>
+            <Box width={'50%'} marginLeft={'25%'}>
+              <List>
+                <ListItem>
+                  <ListItemText
+                    primary="Email"
+                  />
+                  {"simonfromjakobsen@gmail.com"}
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="Phone"
+                  />
+                  {"+45 6060 2456"}
+                </ListItem>
+                <ListItem>
+                  <ListItemText
+                    primary="GitHub"
+                  />
+                  <a href="https://github.com/SimonFJ20" target={'_blank'} rel={'noreferrer'}>
+                  {"@SimonFJ20"}
+                  </a>
+                </ListItem>
+              </List>
+            </Box>
           </p>
         </main>
       </Layout>
